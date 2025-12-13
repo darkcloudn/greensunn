@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "mail@mail.com" );
+define( "RECIPIENT_NAME", "GREEN SUN HANAM" );
+define( "RECIPIENT_EMAIL", "info@greensunhanam.com" );
 
 // Read the form values
 $success = false;
@@ -15,7 +15,7 @@ $address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", 
 $website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
 $message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 
-$mail_subject = 'A contact request send by ' . $name;
+$mail_subject = 'Một yêu cầu liên hệ từ ' . $name;
 
 $body = 'Name: '. $name . "\r\n";
 $body .= 'Email: '. $senderEmail . "\r\n";
